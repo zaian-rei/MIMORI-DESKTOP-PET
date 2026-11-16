@@ -1,0 +1,8 @@
+{
+	"id": "fixture_invalid_dep_missing",
+	"name": "Missing Dep",
+	"type": "behavior",
+	"dependencies": [
+		{ "id": "fixture_ghost" }
+	]
+}

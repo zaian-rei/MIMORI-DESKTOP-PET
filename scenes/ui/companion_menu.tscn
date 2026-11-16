@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scenes/ui/companion_menu.gd" id="1_menu"]
+
+[node name="CompanionMenu" type="Window"]
+title = "Lyria"
+transparent = true
+borderless = true
+unresizable = true
+always_on_top = true
+exclusive = false
+unfocusable = false
+position = Vector2i(-4000, -4000)
+size = Vector2i(260, 120)
+initial_position = 4
+script = ExtResource("1_menu")

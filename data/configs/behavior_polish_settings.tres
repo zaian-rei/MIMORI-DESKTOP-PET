@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="BehaviorPolishSettings" format=3]
+
+[ext_resource type="Script" path="res://core/base/behavior_polish_settings.gd" id="1_pset"]
+
+[resource]
+script = ExtResource("1_pset")
+fatigue_strength = 0.4
+fatigue_per_action = 0.5
+fatigue_recovery_per_second = 0.05
+decision_min_seconds = 3.0
+decision_max_seconds = 6.0
+duration_variation = 0.15
+idle_extension_chance = 0.25
+idle_extension_factor = 1.8
+transition_delay_min = 0.2
+transition_delay_max = 0.6
+delayed_states = [8, 12, 9]

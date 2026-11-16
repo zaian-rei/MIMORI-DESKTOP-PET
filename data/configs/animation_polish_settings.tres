@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="AnimationPolishSettings" format=3]
+
+[ext_resource type="Script" path="res://core/base/animation_polish_settings.gd" id="1_aps"]
+
+[resource]
+script = ExtResource("1_aps")
+priorities = { 6: 100, 7: 95, 4: 90, 5: 90, 3: 80, 8: 70, 12: 70, 1: 60, 2: 60, 9: 40, 10: 40, 11: 40, 13: 40, 0: 10 }
+transition_states = [3, 4, 7]
+one_shot_states = [10, 11, 9, 13, 5]
+transition_protection_seconds = 0.08
+one_shot_protection_seconds = 0.4
+minimum_dwell_time = 0.08
+max_queue_length = 4
+restart_allowed_states = []
+walk_min_duration = 0.32
+chain_settle_seconds = 0.06
+max_transition_steps = 3

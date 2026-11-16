@@ -1,0 +1,211 @@
+[gd_resource type="Resource" script_class="AudioPack" format=3 uid="uid://bgtnw63yntbmu"]
+
+[ext_resource type="Script" uid="uid://udopack0000a" path="res://core/base/audio_pack.gd" id="1_ijq46"]
+[ext_resource type="Script" uid="uid://udsound0000a" path="res://core/base/audio_sound.gd" id="2_hojkx"]
+[ext_resource type="AudioStream" uid="uid://bvng4u2jn73if" path="res://assets/audio/fx_walk_01.wav" id="3_rwyju"]
+[ext_resource type="AudioStream" uid="uid://duobfap4d7i2d" path="res://assets/audio/fx_walk_02.wav" id="4_ukgbk"]
+[ext_resource type="AudioStream" uid="uid://dvhnxjvxykw60" path="res://assets/audio/fx_walk_03.wav" id="5_hcu58"]
+[ext_resource type="AudioStream" uid="uid://warvp4oqkmob" path="res://assets/audio/fx_run_01.wav" id="6_81op3"]
+[ext_resource type="AudioStream" uid="uid://be2eobmis4gy7" path="res://assets/audio/fx_run_02.wav" id="7_buiqd"]
+[ext_resource type="AudioStream" uid="uid://4dntur2dnaey" path="res://assets/audio/fx_run_03.wav" id="8_wqqoc"]
+[ext_resource type="AudioStream" uid="uid://cmwca5x852hcc" path="res://assets/audio/fx_jump.wav" id="9_2dirn"]
+[ext_resource type="AudioStream" uid="uid://bo3vf8eq7jjpx" path="res://assets/audio/fx_land.wav" id="10_8snxh"]
+[ext_resource type="AudioStream" uid="uid://bibdhur6bbcty" path="res://assets/audio/fx_sleep.wav" id="11_loofr"]
+[ext_resource type="AudioStream" uid="uid://f3kw1nmvkrvb" path="res://assets/audio/fx_think.wav" id="12_ub7bq"]
+[ext_resource type="AudioStream" uid="uid://cfp7kbsaagq2" path="res://assets/audio/fx_happy_01.wav" id="13_b2me5"]
+[ext_resource type="AudioStream" uid="uid://c2yj4j23eji3x" path="res://assets/audio/fx_happy_02.wav" id="14_dvvov"]
+[ext_resource type="AudioStream" uid="uid://cyhlyvo68pdrn" path="res://assets/audio/fx_sad.wav" id="15_o6rsc"]
+[ext_resource type="AudioStream" uid="uid://bopjq4gc1cown" path="res://assets/audio/fx_dance.wav" id="16_rjnrh"]
+[ext_resource type="AudioStream" uid="uid://ceynik3n3ucnd" path="res://assets/audio/fx_drag.wav" id="17_l2hs4"]
+[ext_resource type="AudioStream" uid="uid://qidew7u0mkci" path="res://assets/audio/fx_follow_on.wav" id="18_7ksx7"]
+[ext_resource type="AudioStream" uid="uid://5mxcspx7s4a" path="res://assets/audio/fx_follow_off.wav" id="19_v1iei"]
+[ext_resource type="AudioStream" uid="uid://d0glsbk40m2j" path="res://assets/audio/fx_move_echo_burst.wav" id="move_echo_burst"]
+[ext_resource type="AudioStream" uid="uid://mcin5cph2ern" path="res://assets/audio/fx_move_echo_repair.wav" id="move_echo_repair"]
+[ext_resource type="AudioStream" uid="uid://bhu53kodq0cl7" path="res://assets/audio/fx_move_echo_scan.wav" id="move_echo_scan"]
+[ext_resource type="AudioStream" uid="uid://c0qbmdpfhre1s" path="res://assets/audio/fx_move_kairo_sword.wav" id="move_kairo_sword"]
+[ext_resource type="AudioStream" uid="uid://ch65o2xmnkfdi" path="res://assets/audio/fx_move_lumen_appear.wav" id="move_lumen_appear"]
+[ext_resource type="AudioStream" uid="uid://lq4v1prx2qg7" path="res://assets/audio/fx_move_lumen_disappear.wav" id="move_lumen_disappear"]
+[ext_resource type="AudioStream" uid="uid://tj8wxpprguot" path="res://assets/audio/fx_move_miso_bubble.wav" id="move_miso_bubble"]
+[ext_resource type="AudioStream" uid="uid://bdp4tock2waar" path="res://assets/audio/fx_move_miso_launch.wav" id="move_miso_launch"]
+[ext_resource type="AudioStream" uid="uid://ecursp4tcyum" path="res://assets/audio/fx_move_miso_shape.wav" id="move_miso_shape"]
+[ext_resource type="AudioStream" uid="uid://eie570gxdgqd" path="res://assets/audio/fx_move_vex_dive.wav" id="move_vex_dive"]
+[ext_resource type="AudioStream" uid="uid://ck56c2acbg8w3" path="res://assets/audio/fx_move_vex_double.wav" id="move_vex_double"]
+
+[sub_resource type="Resource" id="Resource_5ex0j"]
+script = ExtResource("2_hojkx")
+event_id = &"walk"
+streams = Array[AudioStream]([ExtResource("3_rwyju"), ExtResource("4_ukgbk"), ExtResource("5_hcu58")])
+cooldown_seconds = 0.35
+pitch_variation = 0.05
+volume_db = -6.0
+
+[sub_resource type="Resource" id="Resource_j05ys"]
+script = ExtResource("2_hojkx")
+event_id = &"run"
+streams = Array[AudioStream]([ExtResource("6_81op3"), ExtResource("7_buiqd"), ExtResource("8_wqqoc")])
+cooldown_seconds = 0.22
+pitch_variation = 0.04
+volume_db = -6.0
+
+[sub_resource type="Resource" id="Resource_a0ddc"]
+script = ExtResource("2_hojkx")
+event_id = &"jump"
+streams = Array[AudioStream]([ExtResource("9_2dirn")])
+volume_db = -4.0
+
+[sub_resource type="Resource" id="Resource_3ul6e"]
+script = ExtResource("2_hojkx")
+event_id = &"land"
+streams = Array[AudioStream]([ExtResource("10_8snxh")])
+volume_db = -4.0
+
+[sub_resource type="Resource" id="Resource_bmonv"]
+script = ExtResource("2_hojkx")
+event_id = &"sleep"
+category = 1
+streams = Array[AudioStream]([ExtResource("11_loofr")])
+volume_db = -8.0
+
+[sub_resource type="Resource" id="Resource_4vvab"]
+script = ExtResource("2_hojkx")
+event_id = &"think"
+category = 1
+streams = Array[AudioStream]([ExtResource("12_ub7bq")])
+volume_db = -6.0
+
+[sub_resource type="Resource" id="Resource_vnbc5"]
+script = ExtResource("2_hojkx")
+event_id = &"happy"
+category = 2
+streams = Array[AudioStream]([ExtResource("13_b2me5"), ExtResource("14_dvvov")])
+pitch_variation = 0.06
+volume_db = -4.0
+
+[sub_resource type="Resource" id="Resource_quadu"]
+script = ExtResource("2_hojkx")
+event_id = &"sad"
+category = 2
+streams = Array[AudioStream]([ExtResource("15_o6rsc")])
+volume_db = -4.0
+
+[sub_resource type="Resource" id="Resource_f0efm"]
+script = ExtResource("2_hojkx")
+event_id = &"dance"
+category = 1
+streams = Array[AudioStream]([ExtResource("16_rjnrh")])
+volume_db = -4.0
+
+[sub_resource type="Resource" id="Resource_1wuft"]
+script = ExtResource("2_hojkx")
+event_id = &"drag"
+category = 2
+streams = Array[AudioStream]([ExtResource("17_l2hs4")])
+cooldown_seconds = 0.3
+volume_db = -6.0
+
+[sub_resource type="Resource" id="Resource_g2j6c"]
+script = ExtResource("2_hojkx")
+event_id = &"follow_cursor_enabled"
+category = 3
+streams = Array[AudioStream]([ExtResource("18_7ksx7")])
+volume_db = -6.0
+
+[sub_resource type="Resource" id="Resource_7c7lw"]
+script = ExtResource("2_hojkx")
+event_id = &"follow_cursor_disabled"
+category = 3
+streams = Array[AudioStream]([ExtResource("19_v1iei")])
+volume_db = -6.0
+
+[sub_resource type="Resource" id="EchoHologramScan"]
+script = ExtResource("2_hojkx")
+event_id = &"move_echo_scan"
+category = 6
+streams = Array[AudioStream]([ExtResource("move_echo_scan")])
+cooldown_seconds = 0.5
+volume_db = -2.0
+
+[sub_resource type="Resource" id="EchoSelfRepair"]
+script = ExtResource("2_hojkx")
+event_id = &"move_echo_repair"
+category = 6
+streams = Array[AudioStream]([ExtResource("move_echo_repair")])
+cooldown_seconds = 0.5
+volume_db = -2.0
+
+[sub_resource type="Resource" id="EchoEnergyBurst"]
+script = ExtResource("2_hojkx")
+event_id = &"move_echo_burst"
+category = 6
+streams = Array[AudioStream]([ExtResource("move_echo_burst")])
+cooldown_seconds = 0.5
+volume_db = -2.0
+
+[sub_resource type="Resource" id="KairoSwordDraw"]
+script = ExtResource("2_hojkx")
+event_id = &"move_kairo_sword"
+category = 6
+streams = Array[AudioStream]([ExtResource("move_kairo_sword")])
+cooldown_seconds = 0.5
+volume_db = -2.0
+
+[sub_resource type="Resource" id="LumenDisappear"]
+script = ExtResource("2_hojkx")
+event_id = &"move_lumen_disappear"
+category = 6
+streams = Array[AudioStream]([ExtResource("move_lumen_disappear")])
+cooldown_seconds = 0.5
+volume_db = -2.0
+
+[sub_resource type="Resource" id="LumenReappear"]
+script = ExtResource("2_hojkx")
+event_id = &"move_lumen_appear"
+category = 6
+streams = Array[AudioStream]([ExtResource("move_lumen_appear")])
+cooldown_seconds = 0.5
+volume_db = -2.0
+
+[sub_resource type="Resource" id="MisoSlimeLaunch"]
+script = ExtResource("2_hojkx")
+event_id = &"move_miso_launch"
+category = 6
+streams = Array[AudioStream]([ExtResource("move_miso_launch")])
+cooldown_seconds = 0.5
+volume_db = -2.0
+
+[sub_resource type="Resource" id="MisoShapeShift"]
+script = ExtResource("2_hojkx")
+event_id = &"move_miso_shape"
+category = 6
+streams = Array[AudioStream]([ExtResource("move_miso_shape")])
+cooldown_seconds = 0.5
+volume_db = -2.0
+
+[sub_resource type="Resource" id="MisoBubblePop"]
+script = ExtResource("2_hojkx")
+event_id = &"move_miso_bubble"
+category = 6
+streams = Array[AudioStream]([ExtResource("move_miso_bubble")])
+cooldown_seconds = 0.5
+volume_db = -2.0
+
+[sub_resource type="Resource" id="VexShadowDouble"]
+script = ExtResource("2_hojkx")
+event_id = &"move_vex_double"
+category = 6
+streams = Array[AudioStream]([ExtResource("move_vex_double")])
+cooldown_seconds = 0.5
+volume_db = -2.0
+
+[sub_resource type="Resource" id="VexShadowDive"]
+script = ExtResource("2_hojkx")
+event_id = &"move_vex_dive"
+category = 6
+streams = Array[AudioStream]([ExtResource("move_vex_dive")])
+cooldown_seconds = 0.5
+volume_db = -2.0
+
+[resource]
+script = ExtResource("1_ijq46")
+pack_name = "Default"
+sounds = Array[ExtResource("2_hojkx")]([SubResource("Resource_5ex0j"), SubResource("Resource_j05ys"), SubResource("Resource_a0ddc"), SubResource("Resource_3ul6e"), SubResource("Resource_bmonv"), SubResource("Resource_4vvab"), SubResource("Resource_vnbc5"), SubResource("Resource_quadu"), SubResource("Resource_f0efm"), SubResource("Resource_1wuft"), SubResource("Resource_g2j6c"), SubResource("Resource_7c7lw"), SubResource("EchoHologramScan"), SubResource("EchoSelfRepair"), SubResource("EchoEnergyBurst"), SubResource("KairoSwordDraw"), SubResource("LumenDisappear"), SubResource("LumenReappear"), SubResource("MisoSlimeLaunch"), SubResource("MisoShapeShift"), SubResource("MisoBubblePop"), SubResource("VexShadowDouble"), SubResource("VexShadowDive")])

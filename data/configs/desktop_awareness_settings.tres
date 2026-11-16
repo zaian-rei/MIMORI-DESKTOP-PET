@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="DesktopAwarenessSettings" format=3]
+
+[ext_resource type="Script" uid="uid://tcaha7yi2rea" path="res://core/base/desktop_awareness_settings.gd" id="1_aset"]
+
+[resource]
+script = ExtResource("1_aset")
+refresh_interval = 0.5
+cursor_interaction_radius = 60.0
+edge_padding = 24.0
+safe_walking_margin = 32.0
+floor_offset = 0.0

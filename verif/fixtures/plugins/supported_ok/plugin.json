@@ -1,0 +1,11 @@
+{
+	"id": "fixture_supported_ok",
+	"name": "Fixture Supported OK",
+	"version": "1.0.0",
+	"author": "Discovery Harness",
+	"description": "Explicitly lists the running engine as supported.",
+	"type": "general",
+	"enable_on_start": true,
+	"engine_version": ">=4.0",
+	"supported_engine_versions": ["4.7"]
+}

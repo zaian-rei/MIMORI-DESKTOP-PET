@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="FollowCursorSettings" format=3 uid="uid://bxr2khsbe1ay4"]
+
+[ext_resource type="Script" uid="uid://6cw4teugaejc" path="res://core/base/follow_cursor_settings.gd" id="1_fset"]
+
+[resource]
+script = ExtResource("1_fset")

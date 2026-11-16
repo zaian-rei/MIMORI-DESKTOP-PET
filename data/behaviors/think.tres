@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="BehaviorDefinition" format=3]
+
+[ext_resource type="Script" path="res://core/base/behavior_definition.gd" id="1_bdef"]
+
+[resource]
+script = ExtResource("1_bdef")
+state = 9
+category = 0
+animation_name = "thinking"
+base_weight = 5.0
+duration_min = 6.0
+duration_max = 12.0
+cooldown_min = 15.0
+cooldown_max = 30.0
+allowed_from = [0]
+stat_gates = {
+2: 60.0
+}
+stat_maxes = {
+4: 75.0
+}
+stat_weights = {
+2: 1.0
+}
+stat_effects = {
+0: -0.2,
+2: -0.8,
+3: -0.6
+}

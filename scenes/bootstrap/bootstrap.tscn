@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://g7257kmqf0vf"]
+
+[ext_resource type="Script" uid="uid://boftvdx04bjmb" path="res://scenes/bootstrap/bootstrap.gd" id="1_q8nw6"]
+[ext_resource type="Script" uid="uid://4tgaubbaannf" path="res://systems/desktop/desktop_window.gd" id="2_a6xvj"]
+
+[node name="Bootstrap" type="Node" unique_id=580974154]
+script = ExtResource("1_q8nw6")
+
+[node name="DesktopWindow" type="Node" parent="." unique_id=914342303]
+script = ExtResource("2_a6xvj")

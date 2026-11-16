@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="MovementSettings" format=3 uid="uid://cc7pypoc3ysax"]
+
+[ext_resource type="Script" uid="uid://ci7xcjamh22dt" path="res://core/base/movement_settings.gd" id="1_mset"]
+
+[resource]
+script = ExtResource("1_mset")

@@ -1,0 +1,119 @@
+[gd_scene format=3 uid="uid://db2jku83xgcnj"]
+
+[ext_resource type="Script" uid="uid://b5jfvtpc301oq" path="res://pets/default/pet.gd" id="1_uc6p5"]
+[ext_resource type="Script" uid="uid://batdivcmtf1lt" path="res://components/movement/movement_component.gd" id="1_vyqja"]
+[ext_resource type="Resource" uid="uid://cwous3ibceryw" path="res://data/configs/default_pet_definition.tres" id="2_r6qmo"]
+[ext_resource type="Script" uid="uid://da87sfeq21dxu" path="res://components/animation/animation_component.gd" id="2_uc6p5"]
+[ext_resource type="Script" uid="uid://cr6y7kisq0rpt" path="res://components/dragging/drag_component.gd" id="3_ur5mw"]
+[ext_resource type="Script" uid="uid://0ujlod5hpck3" path="res://components/physics/physics_component.gd" id="4_dw2dr"]
+[ext_resource type="Script" uid="uid://bx8abbi08a8vi" path="res://components/state_machine/state_machine.gd" id="8_dw2dr"]
+[ext_resource type="Script" uid="uid://dbnk56cht6bqw" path="res://components/animation/animation_controller.gd" id="9_vey2l"]
+[ext_resource type="Script" uid="uid://bk4iyssvta5ei" path="res://components/window/click_through_component.gd" id="18_aevj3"]
+[ext_resource type="Script" uid="uid://ddh5kj2catt3j" path="res://components/window/context_menu_component.gd" id="18_mun0n"]
+[ext_resource type="Script" uid="uid://bc8v0wmlbpdj2" path="res://components/behavior/behavior_controller.gd" id="19_bctl"]
+[ext_resource type="Script" uid="uid://vclmdk7ag10b" path="res://components/awareness/desktop_awareness_component.gd" id="20_bctl"]
+[ext_resource type="Script" uid="uid://batd3fhaq88gk" path="res://components/interaction/interaction_component.gd" id="21_bctl"]
+[ext_resource type="Script" uid="uid://857bl6ejpl6t" path="res://components/emotion/emotion_component.gd" id="22_bctl"]
+[ext_resource type="Script" uid="uid://cwrdkpdb035rw" path="res://components/behavior/behavior_stats_component.gd" id="23_bctl"]
+[ext_resource type="Script" uid="uid://be284kyblsqf0" path="res://components/behavior/behavior_decision_component.gd" id="24_bctl"]
+[ext_resource type="Script" uid="uid://cf44274rkt0aw" path="res://components/behavior/behavior_memory_component.gd" id="25_bctl"]
+[ext_resource type="Script" uid="uid://ci3mgjftg0fo" path="res://components/follow/follow_cursor_component.gd" id="26_bctl"]
+[ext_resource type="Script" uid="uid://dq32ujwcx8lou" path="res://components/personality/personality_component.gd" id="27_bctl"]
+[ext_resource type="Script" uid="uid://bplshcmp0n3nt" path="res://components/behavior/behavior_polish_component.gd" id="28_bctl"]
+[ext_resource type="Script" uid="uid://bbhy1bku02hej" path="res://components/movement/movement_polish_component.gd" id="29_bctl"]
+[ext_resource type="Script" uid="uid://nmtplshmgr" path="res://components/animation/animation_transition_manager.gd" id="30_bctl"]
+[ext_resource type="Script" uid="uid://udevtcmp000a" path="res://components/audio/audio_event_component.gd" id="31_actl"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_aewir"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q8nw6"]
+radius = 109.0
+height = 304.0
+
+[node name="Pet" type="Node2D" unique_id=385656483]
+script = ExtResource("1_uc6p5")
+definition = ExtResource("2_r6qmo")
+
+[node name="Visual" type="Node2D" parent="." unique_id=1423336616]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Visual" unique_id=191254207]
+position = Vector2(2, -2)
+sprite_frames = SubResource("SpriteFrames_aewir")
+
+[node name="Interaction" type="Area2D" parent="." unique_id=1276458453]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interaction" unique_id=1387870413]
+shape = SubResource("CapsuleShape2D_q8nw6")
+
+[node name="Components" type="Node" parent="." unique_id=1974715711]
+
+[node name="MovementComponent" type="Node" parent="Components" unique_id=516222515]
+script = ExtResource("1_vyqja")
+
+[node name="MovementPolishComponent" type="Node" parent="Components" unique_id=1357984032]
+script = ExtResource("29_bctl")
+
+[node name="AnimationTransitionManager" type="Node" parent="Components" unique_id=1357984033]
+script = ExtResource("30_bctl")
+
+[node name="AnimationComponent" type="Node" parent="Components" unique_id=1644533213]
+script = ExtResource("2_uc6p5")
+
+[node name="DragComponent" type="Node" parent="Components" unique_id=1610534469]
+script = ExtResource("3_ur5mw")
+
+[node name="PhysicsComponent" type="Node" parent="Components" unique_id=2110250308]
+script = ExtResource("4_dw2dr")
+
+[node name="StateMachine" type="Node" parent="Components" unique_id=1734517087]
+script = ExtResource("8_dw2dr")
+
+[node name="AnimationController" type="Node" parent="Components" unique_id=1879531609]
+script = ExtResource("9_vey2l")
+
+[node name="ContextMenuComponent" type="Node" parent="Components" unique_id=140149549]
+script = ExtResource("18_mun0n")
+
+[node name="ClickThroughComponent" type="Node" parent="Components" unique_id=1182622918]
+script = ExtResource("18_aevj3")
+
+[node name="BehaviorStatsComponent" type="Node" parent="Components" unique_id=1357984026]
+script = ExtResource("23_bctl")
+
+[node name="BehaviorDecisionComponent" type="Node" parent="Components" unique_id=1357984027]
+script = ExtResource("24_bctl")
+
+[node name="BehaviorMemoryComponent" type="Node" parent="Components" unique_id=1357984028]
+script = ExtResource("25_bctl")
+
+[node name="BehaviorController" type="Node" parent="Components" unique_id=1357984022]
+script = ExtResource("19_bctl")
+
+[node name="DesktopAwarenessComponent" type="Node" parent="Components" unique_id=1357984023]
+script = ExtResource("20_bctl")
+
+[node name="InteractionComponent" type="Node" parent="Components" unique_id=1357984024]
+script = ExtResource("21_bctl")
+
+[node name="EmotionComponent" type="Node" parent="Components" unique_id=1357984025]
+script = ExtResource("22_bctl")
+
+[node name="FollowCursorComponent" type="Node" parent="Components" unique_id=1357984029]
+script = ExtResource("26_bctl")
+
+[node name="PersonalityComponent" type="Node" parent="Components" unique_id=1357984030]
+script = ExtResource("27_bctl")
+
+[node name="BehaviorPolishComponent" type="Node" parent="Components" unique_id=1357984031]
+script = ExtResource("28_bctl")
+
+[node name="AudioEventComponent" type="Node" parent="Components" unique_id=1357984034]
+script = ExtResource("31_actl")
+
+[node name="Timers" type="Node" parent="." unique_id=107969641]
+
+[node name="ClickPolygon" type="Polygon2D" parent="." unique_id=2061049275]
+position = Vector2(-140, -13)
+scale = Vector2(1.5497382, 1.1571429)
+color = Color(1, 1, 1, 0)
+polygon = PackedVector2Array(-29.682434, 0.049383163, 1.9358063, -103.7037, 2, -92, 56.783783, -209.08641, 93.564186, -212.59258, 169.70609, -196.12344, 207.13176, -145.18517, 212.29391, -4.2716045, 216.8108, -6, 181, 94, 181, 94, 110.98649, 159.06172, 64.52702, 159.92592, 9, 100, 9, 100, -26.456085, 4.370371)

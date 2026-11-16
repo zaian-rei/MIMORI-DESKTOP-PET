@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="PetDefinition" format=3 uid="uid://cwous3ibceryw"]
+
+[ext_resource type="Script" uid="uid://vxxq1hxj02d5" path="res://core/base/pet_definition.gd" id="1_pdef"]
+[ext_resource type="Resource" uid="uid://cc7pypoc3ysax" path="res://data/configs/movement_settings.tres" id="2_mset"]
+[ext_resource type="Resource" uid="uid://bxr2khsbe1ay4" path="res://data/configs/follow_cursor_settings.tres" id="3_fset"]
+[ext_resource type="Resource" path="res://data/configs/desktop_awareness_settings.tres" id="4_aset"]
+[ext_resource type="Resource" path="res://data/configs/behavior_polish_settings.tres" id="5_pset"]
+[ext_resource type="Resource" uid="uid://ysfwndvcfstn" path="res://data/configs/movement_polish_settings.tres" id="6_pset"]
+[ext_resource type="Resource" path="res://data/configs/animation_polish_settings.tres" id="7_apset"]
+[ext_resource type="Resource" uid="uid://bgtnw63yntbmu" path="res://data/configs/default_audio_pack.tres" id="8_apack"]
+
+[resource]
+script = ExtResource("1_pdef")
+floor_offset = 0.0
+movement_settings = ExtResource("2_mset")
+movement_polish_settings = ExtResource("6_pset")
+animation_polish_settings = ExtResource("7_apset")
+follow_cursor_settings = ExtResource("3_fset")
+desktop_awareness_settings = ExtResource("4_aset")
+default_personality_id = "calm"
+polish_settings = ExtResource("5_pset")
+audio_pack = ExtResource("8_apack")
+metadata/_custom_type_script = "uid://vxxq1hxj02d5"

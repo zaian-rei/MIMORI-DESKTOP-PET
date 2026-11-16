@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="BehaviorDefinition" format=3]
+
+[ext_resource type="Script" path="res://core/base/behavior_definition.gd" id="1_bdef"]
+
+[resource]
+script = ExtResource("1_bdef")
+state = 2
+category = 0
+animation_name = "run"
+base_weight = 9.0
+duration_min = 4.0
+duration_max = 10.0
+cooldown_min = 6.0
+cooldown_max = 12.0
+allowed_from = [1, 2]
+stat_gates = {
+0: 30.0
+}
+stat_maxes = {
+4: 55.0
+}
+stat_weights = {
+0: 1.0,
+3: 0.6
+}
+stat_effects = {
+0: -2.5,
+2: -0.3,
+3: -1.2,
+4: 1.4
+}

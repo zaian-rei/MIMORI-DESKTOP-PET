@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="BehaviorDefinition" format=3]
+
+[ext_resource type="Script" path="res://core/base/behavior_definition.gd" id="1_bdef"]
+
+[resource]
+script = ExtResource("1_bdef")
+state = 0
+category = 0
+animation_name = "idle"
+base_weight = 7.0
+duration_min = 3.0
+duration_max = 7.0
+cooldown_min = 0.0
+cooldown_max = 0.0
+allowed_from = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+stat_gates = {}
+stat_maxes = {
+4: 80.0
+}
+stat_weights = {}
+stat_effects = {
+0: -0.1,
+2: 0.4
+}

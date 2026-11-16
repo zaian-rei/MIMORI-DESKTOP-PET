@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="PersonalityDefinition" format=3]
+
+[ext_resource type="Script" path="res://core/base/personality_definition.gd" id="1_pdef"]
+
+[resource]
+script = ExtResource("1_pdef")
+id = "lazy"
+display_name = "Lazy"
+description = "Sleeps often, walks shorter distances, idles longer, loses energy slowly and avoids unnecessary movement."
+movement_frequency = 0.35
+thinking_frequency = 1.0
+dance_chance = 0.5
+sleep_preference = 1.7
+idle_preference = 1.6
+idle_duration_modifier = 1.8
+walk_distance_modifier = 0.55
+decision_delay_modifier = 1.5
+movement_speed_modifier = 0.8
+reaction_speed_modifier = 0.7
+curiosity_modifier = 0.8
+energy_consumption_modifier = 0.65
+boredom_growth_modifier = 0.5
+happiness_modifier = 0.9

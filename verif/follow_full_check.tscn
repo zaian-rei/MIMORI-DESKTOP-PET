@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://follow_fullchk01"]
+
+[ext_resource type="Script" path="res://verif/follow_full_check.gd" id="1_x"]
+
+[node name="FollowFullCheck" type="Node"]
+script = ExtResource("1_x")

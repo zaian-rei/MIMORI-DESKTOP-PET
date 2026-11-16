@@ -1,0 +1,8 @@
+{
+	"id": "fixture_invalid_dep_version",
+	"name": "Dep Version",
+	"type": "behavior",
+	"dependencies": [
+		{ "id": "fixture_dep_core", "min": "3.0.0" }
+	]
+}

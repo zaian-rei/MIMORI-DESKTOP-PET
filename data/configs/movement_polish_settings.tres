@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="MovementPolishSettings" format=3 uid="uid://ysfwndvcfstn"]
+
+[ext_resource type="Script" uid="uid://bbhy1b2c48fd5" path="res://core/base/movement_polish_settings.gd" id="1_mpset"]
+
+[resource]
+script = ExtResource("1_mpset")

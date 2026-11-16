@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ThemeResource" format=3 uid="uid://default_theme"]
+
+[ext_resource type="Script" uid="uid://bahcobvk4ioii" path="res://core/base/theme_resource.gd" id="1_theme"]
+[ext_resource type="Resource" uid="uid://bgtnw63yntbmu" path="res://data/configs/default_audio_pack.tres" id="3_audio"]
+
+[resource]
+script = ExtResource("1_theme")
+id = "default"
+display_name = "Default Pet"
+version = "1.0.0"
+author = "Desktop Pet Engine"
+description = "The built-in default pet theme with standard animations and sounds."
+min_engine_version = ""
+supported_engine_version = "4.7"
+audio_pack = ExtResource("3_audio")
+default_personality_id = "calm"
+extensions = {}

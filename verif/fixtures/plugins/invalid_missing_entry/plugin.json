@@ -1,0 +1,6 @@
+{
+	"id": "fixture_invalid_missing_entry",
+	"name": "Missing Entry",
+	"type": "general",
+	"entry": "missing.gd"
+}

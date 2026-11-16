@@ -1,0 +1,6 @@
+{
+	"id": "fixture_invalid_supported_list",
+	"name": "Bad Supported List",
+	"type": "general",
+	"supported_engine_versions": ["999.0"]
+}

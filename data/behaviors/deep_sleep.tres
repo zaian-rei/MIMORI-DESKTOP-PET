@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="BehaviorDefinition" format=3]
+
+[ext_resource type="Script" path="res://core/base/behavior_definition.gd" id="1_bdef"]
+
+[resource]
+script = ExtResource("1_bdef")
+state = 12
+category = 0
+animation_name = "deep sleep"
+base_weight = 16.0
+duration_min = 120.0
+duration_max = 300.0
+cooldown_min = 90.0
+cooldown_max = 180.0
+allowed_from = [0, 8]
+stat_gates = {
+4: 85.0
+}
+stat_maxes = {
+0: 30.0
+}
+stat_weights = {
+4: 2.0
+}
+stat_effects = {
+0: 4.0,
+1: 0.8,
+4: -3.0
+}

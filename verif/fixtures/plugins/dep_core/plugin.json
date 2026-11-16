@@ -1,0 +1,10 @@
+{
+	"id": "fixture_dep_core",
+	"name": "Fixture Core",
+	"version": "2.0.0",
+	"author": "Discovery Harness",
+	"description": "Core fixture plugin that other fixtures depend on.",
+	"engine_version": ">=4.0",
+	"type": "core",
+	"enable_on_start": true
+}

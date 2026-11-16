@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="BehaviorDefinition" format=3]
+
+[ext_resource type="Script" path="res://core/base/behavior_definition.gd" id="1_bdef"]
+
+[resource]
+script = ExtResource("1_bdef")
+state = 11
+category = 0
+animation_name = "sad"
+base_weight = 4.0
+duration_min = 4.0
+duration_max = 8.0
+cooldown_min = 12.0
+cooldown_max = 20.0
+allowed_from = [0]
+stat_gates = {}
+stat_maxes = {
+1: 40.0
+}
+stat_weights = {}
+stat_effects = {}

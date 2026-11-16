@@ -1,0 +1,12 @@
+{
+	"id": "fixture_behavior",
+	"name": "Fixture Behavior",
+	"version": "1.0.0",
+	"author": "Discovery Harness",
+	"description": "Behavior fixture depending on the core fixture.",
+	"type": "behavior",
+	"enable_on_start": true,
+	"dependencies": [
+		{ "id": "fixture_dep_core", "min": "2.0.0" }
+	]
+}

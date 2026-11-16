@@ -1,0 +1,12 @@
+{
+	"id": "fixture_optional",
+	"name": "Fixture Optional",
+	"version": "1.0.0",
+	"author": "Discovery Harness",
+	"description": "Has an optional dependency that is not installed.",
+	"type": "developer",
+	"enable_on_start": true,
+	"optional_dependencies": [
+		{ "id": "fixture_ghost" }
+	]
+}

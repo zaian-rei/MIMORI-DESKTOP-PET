@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://verif/verify_neon_windows.gd" id="1"]
+
+[node name="verify_neon_windows" type="Node"]
+script = ExtResource("1")

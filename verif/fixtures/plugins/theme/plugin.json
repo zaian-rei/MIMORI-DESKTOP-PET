@@ -1,0 +1,9 @@
+{
+	"id": "fixture_theme",
+	"name": "Fixture Theme",
+	"version": "1.0.0",
+	"author": "Discovery Harness",
+	"description": "Theme shipped as a plugin.",
+	"type": "theme",
+	"enable_on_start": true
+}

@@ -1,0 +1,3 @@
+extends Plugin
+
+not_valid_gdscript_token_here
