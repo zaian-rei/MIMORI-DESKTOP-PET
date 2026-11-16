@@ -28,6 +28,8 @@ Open this folder in Godot 4.7 and press **F5** to run the main project. Platform
 
 Please report problems through the repository's Issues page and include your operating system, desktop environment (Linux), and steps to reproduce the issue.
 
-## License
+## License and notices
 
-No reuse license is included yet. Until a license is added, the source and bundled artwork remain copyrighted by their respective owners.
+Official Mimori releases may be downloaded, installed, and run for personal, noncommercial use. All other rights to original Mimori source code, character designs, artwork, music, and sound effects are reserved. This is not an open-source license. Read [LICENSE.md](LICENSE.md) before reusing any part of Mimori.
+
+Godot and the bundled fonts have separate third-party licenses. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), [GODOT_COPYRIGHT.txt](GODOT_COPYRIGHT.txt), and the font license files in `assets/fonts/`.
